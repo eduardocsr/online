@@ -1,0 +1,56 @@
+/*=============================================
+FOOTER
+=============================================*/
+
+footer {
+    margin-top: 20px;
+    /*border-top: 8px solid #999;*/
+    background: #F8F4F4;
+    padding: 20px 0;
+}
+.footerCategorias h4 a {
+    color: #3D3838;
+}
+.footerCategorias li a {
+    color: #433939;
+}
+.footerCategorias hr {
+    border: 1px solid #333;
+}
+.infoContacto h5 {
+    color: #433939;
+    font-weight: bold;
+}
+.formContacto h4 {
+    color: #3D3838;
+}
+.final {
+    padding: 20px 0;
+    background: black;
+    width: 100% !important
+}
+
+/*mivimiento mensaje*/
+
+#contenido::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+form {
+    margin: 30px 0;
+}
+#loaders {
+    text-align: center;
+}
+#loaders img {
+    width: 90px;
+    margin: 0 auto;
+    /* display: none; */
+}
+#resetBtn {
+    float: right;
+}
+#spinner {
+    display: none;
+}

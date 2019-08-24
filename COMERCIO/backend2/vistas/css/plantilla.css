@@ -1,0 +1,65 @@
+/*=============================================
+REDES SOCIALES
+=============================================*/
+#status{
+    width: 250px;
+}
+.redSocial {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+/*FACEBOOK*/
+
+.facebookBlanco {
+    color: white;
+    background: black;
+}
+.facebookNegro {
+    color: black;
+}
+.facebookColor {
+    color: white;
+    background: #46639f;
+}
+/*YOUTUBE*/
+
+.youtubeColor {
+    color: white;
+    background: #d6513e;
+}
+.youtubeBlanco {
+    color: white;
+    background: black;
+}
+.youtubeNegro {
+    color: black;
+}
+/
+/*WhatsApp*/
+
+.whatsappColor {
+    color: white;
+    background: green;
+}
+.whatsappBlanco {
+    color: white;
+    background: black;
+}
+.whatsappNegro {
+    color: black;
+}
+/*INSTAGRAM*/
+
+.instagramColor {
+    color: white;
+    background: linear-gradient(45deg, #fca925, #ee1d5f, #6350a2);
+}
+.instagramBlanco {
+    color: white;
+    background: black;
+}
+.instagramNegro {
+    color: black;
+}

@@ -1,0 +1,589 @@
+form>div>div>input[type="text"]:invalid:not(:focus):not(:placeholder-shown), form>div>div>input[type="email"]:invalid:not(:focus):not(:placeholder-shown), form>div>div>input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIceG052tLvY74FmdSs8N1WsoRHlovUeEd1RWgl_Zavke7yGeW3A);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: red;
+}
+form>div>div>input[type="text"]:valid, form>div>div>input[type="email"]:valid, form>div>div>input[type="password"]:valid {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: green;
+}
+.carro {
+    position: relative;
+    top: 12px;
+    left: 70%;
+}
+.dinamico {
+    display: block;
+}
+.pixelSubCategorias {
+    padding-bottom: 50px;
+}
+.CambioColor {}
+.btn-6::before, .btn-6::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #B6B3B3;
+    opacity: 0.5
+}
+.dinamico::before, .dinamico::after {
+    content: "";
+    width: 4px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #B6B3B3;
+    opacity: 0.5
+}
+.btn-6:hover::before, .btn-6:hover::after {
+    width: 100%;
+}
+.btn-6:hover .dinamico::before, .btn-6:hover .dinamico::after {
+    height: 100%;
+}
+/*----- button 6 -----*/
+
+.btn-6::before {
+    left: 50%;
+    top: 0;
+    transition-duration: 0.4s;
+}
+.btn-6::after {
+    left: 50%;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+.btn-6 .dinamico::before {
+    left: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+}
+.btn-6 .dinamico::after {
+    right: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+}
+.btn-6:hover::before, .btn-6:hover::after {
+    left: 0;
+}
+.btn-6:hover .dinamico::before, .btn-6:hover .dinamico::after {
+    top: 0;
+}
+/*=============================================
+IMAGENES DE VERIFICACION DE REGISTRO DE USUARIO
+=============================================*/
+
+.fas {
+    font-size: 20px;
+}
+.fas.active {
+    color: #56D6DA;
+    font-size: 30px;
+}
+.fas2 {
+    font-size: 20px;
+}
+.fas2.active {
+    color: #56D6DA;
+}
+/*
+VIDEO DE AYUDA
+  */
+
+.primero, .segundo {
+    display: none;
+}
+#segundo {
+    position: absolute;
+    top: 100px;
+}
+/* Al pasar el mouse por encima del div mostramos el div con la
+        clase ".primero". Esta clase, tiene que estar dentro del id
+        "primero" para que pueda funcionar
+     */
+
+#primero:hover .primero {
+    display: block;
+    z-index: 10;
+    padding: 1px;
+}
+#segundo:hover .segundo {
+    display: block;
+}
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+    z-index: 5;
+}
+.contenedor article {
+    line-height: 28px;
+}
+.contenedor article h1 {
+    font-size: 30px;
+    text-align: left;
+    padding: 50px 0;
+}
+.contenedor article p {
+    margin-bottom: 20px;
+}
+.flotante {
+    display: scroll;
+    position: relative;
+    bottom: 73px;
+    left: 125%;
+    right: 0;
+}
+.contenedor article .btn-abrir-popup {
+    padding: 0 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #A9A6A6;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+.contenedor article .btn-abrir-popup:hover {
+    color: #59E5DD;
+}
+/* ------------------------- */
+
+/* POPUP */
+
+/* ------------------------- */
+
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+.overlay.active {
+    visibility: visible;
+}
+.popup {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    transition: .3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+}
+.popup .btn-cerrar-popup:hover {
+    color: #000;
+}
+.popup h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+.popup h4 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+.popup form .contenedor-inputs {
+    opacity: 0;
+}
+.popup form .contenedor-inputs input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 52px;
+    text-align: center;
+    border: 1px solid #BBBBBB;
+}
+.popup form .btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #5E7DE3;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.popup form .btn-submit:hover {
+    background: rgba(94, 125, 227, .9);
+}
+.agrandar {
+    height: 50px;
+}
+/* ------------------------- */
+
+/* ANIMACIONES */
+
+/* ------------------------- */
+
+.popup.active {
+    transform: scale(1);
+    opacity: 1;
+}
+.popup.active h3 {
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+.popup.active h4 {
+    animation: entradaSubtitulo .8s ease .5s forwards;
+}
+.popup.active .contenedor-inputs {
+    animation: entradaInputs 1s linear 1s forwards;
+}
+@keyframes entradaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes entradaSubtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes entradaInputs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*=============================================
+TOP
+=============================================*/
+
+#top ul {
+    padding-top: 8px;
+}
+#top ul li {
+    display: inline;
+    line-height: 30px;
+    margin: 0px 5px;
+    color: white;
+}
+.social ul li a i {
+    font-size: 18px;
+    margin: 0 1px;
+}
+.registro ul {
+    text-align: right;
+    font-size: 12px;
+}
+/*=============================================
+HEADER
+=============================================*/
+
+header #btnCategorias {}
+header #btnCategorias p {
+    line-height: 40px;
+    margin-bottom: 0px;
+    border-radius: 50px;
+}
+header #btnCategorias p span {
+    cursor: pointer;
+}
+#buscador2:focus {
+    box-shadow: 0 0 10px rgba(20, 137, 183, 1);
+    border: 1px solid rgba(84, 190, 176, 0.8);
+    background-color: #ffffff;
+}
+#buscador2 {
+    box-shadow: 0 0 2px rgba(84, 190, 176, 1);
+    border: 1px solid rgba(84, 190, 176, 0.8);
+    background-color: #ffffff;
+}
+#carrito button {
+    padding: 9px 15px;
+    border: 1px solid silver;
+    border-radius: 0;
+}
+#carrito p {
+    padding: 2px;
+    padding-left: 60px;
+    border: 1px solid #aaa;
+    font-size: 12px;
+    color: white;
+}
+header #categorias {
+    margin-top: -10px;
+    position: relative;
+    padding-bottom: 2 0px;
+}
+header #categorias h4 {
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+header #categorias hr {
+    border: 2px solid rgba(91, 201, 202, .3);
+}
+﻿
+/*=============================================
+VENTANAS MODALES
+=============================================*/
+
+.modalTitulo {
+    padding: 5px 0px;
+}
+.modalTitulo h3 {
+    text-align: center;
+    margin-top: -5px;
+    padding: 15px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+.modalFormulario .close {
+    position: absolute;
+    right: 27px;
+    top: 15px;
+    color: white;
+}
+.modalFormulario .facebook facebook2, .modalFormulario .google {
+    cursor: pointer;
+}
+.modalFormulario .facebook p {
+    background: #46639f;
+    border-radius: 10px;
+}
+.modalFormulario .facebook2 p {
+    background: #71CED9;
+    border-radius: 10px;
+}
+.modalFormulario .google p {
+    background: #d6513e;
+    border-radius: 10px;
+}
+.modalFormulario .facebook p,.facebook2 p, .modalFormulario .google p {
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    padding: 8px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.modalFormulario p i {
+    margin-left: -25px;
+    margin-right: 25px;
+    font-size: 25px;
+}
+.modalFormulario form {
+    padding: 20px;
+}
+.modalFormulario form hr {
+    border: 1px solid #eee;
+}
+.modalFormulario form input[type="text"], .modalFormulario form input[type="email"], .modalFormulario form input[type="password"] {
+    padding: 25px;
+}
+.modalFormulario form input[type="submit"] {
+    padding: 15px;
+}
+.modalFormulario form .checkBox {
+    margin-top: 10px;
+}
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width:1200px) {
+    /*=============================================
+    HEADER
+    =============================================*/
+    #logotipo img {
+        padding: 0px 160px;
+        padding-left: 0px;
+        width: 400px;
+    }
+    header #carrito {
+        padding-left: 100px;
+    }
+    .modalFormulario .facebook p {
+        margin-right: -15px;
+    }
+    .dropdown-menu.columns-3 {
+        width: 850%;
+        padding: 30px 1px;
+        background-color: #FFFFFF;
+    }
+    .cambiarcolor {
+        color: #FFFFFF
+    }
+    .carro {
+        position: relative;
+        top: 12px;
+        left: 55%;
+    }
+}
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px) {
+    /*=============================================
+    HEADER
+    =============================================*/
+    #logotipo img {
+        padding: 5px 60px;
+        padding-left: 0px;
+    }
+    header #carrito {
+        padding-left: 70px;
+    }
+    .modalFormulario .facebook p {
+        margin-right: -15px;
+    }
+    .dropdown-menu.columns-3 {
+        width: 700%;
+        padding: 30px 1px;
+        background-color: #FFFFFF;
+        opacity: 0.9;
+    }
+    .carro {
+        position: relative;
+        top: 12px;
+        left: 40%;
+    }
+    .flotante {
+        display: scroll;
+        position: relative;
+        bottom: 73px;
+        left: 100%;
+        right: 0;
+    }
+}
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px) {
+    /*=============================================
+    HEADER
+    =============================================*/
+    .dropdown-menu.columns-3 {
+        width: 600%;
+        padding: 30px 1px;
+        background-color: #FFFFFF;
+    }
+    #logotipo img {
+        padding: 0px 0px;
+        width: 300px;
+    }
+    header #carrito {
+        padding-left: 55px;
+    }
+    header #carrito p {
+        display: none;
+    }
+    .modalFormulario .facebook p {
+        margin-right: -15px;
+    }
+    .carro {
+        position: relative;
+        top: 12px;
+        left: 35%;
+    }
+    .flotante {
+        display: scroll;
+        position: relative;
+        bottom: 73px;
+        left: 98%;
+        right: 0;
+    }
+    #buscador{
+        padding: 20px 0px 0px 40px;
+    }
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px) {
+    /*=============================================
+    TOP
+    =============================================*/
+    #top ul {
+        text-align: center;
+    }
+    #top #registro {
+        border-top: 1px solid #222;
+    }
+    /*=============================================
+    HEADER
+    =============================================*/
+    #logotipo img {
+        padding: 10px;
+        padding-bottom: 10px;
+        width: 450px;
+    }
+    header #categorias {
+        margin-bottom: 10px;
+    }
+    header #buscador {
+        margin-bottom: 10px;
+    }
+    header #carrito {
+        margin: 0px;
+    }
+    .modalFormulario .google p {
+        margin-top: -15px;
+    }
+    .carro {
+        position: relative;
+        top: 12px;
+        left: -5%;
+    }
+    #img-carrito {
+        width: 30px;
+    }
+    .flotante {
+        display: scroll;
+        position: relative;
+        bottom: 73px;
+        left: 80%;
+        right: 0;
+        color: #FFFFFF;
+    }
+}

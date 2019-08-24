@@ -1,0 +1,327 @@
+/*
+
+GLOBAL
+*/
+.distri {text-shadow: 1px 1px white, -1px -1px #333}
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubunt', sans-serif;
+}
+ul, ol {
+    padding: 0;
+}
+a:visited, a:link, a:focus, a:hover, a:active {
+    list-style: none;
+    text-decoration: none;
+}
+.barraSuperior {
+    background: black;
+}
+.barraSuperior a {
+    color: #FFFFFF;
+}
+.backColor, .backColor a {
+    background: #83D5D7;
+    color: white;
+}
+.fondoBreadcrumb {
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0);
+}
+/* REDES SOCIALES*/
+
+.redSocial {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.redSocial2 {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+   
+    line-height: 50px;
+}
+/*FACEBOOK*/
+
+.facebookBlanco {
+    color: white;
+}
+.facebookNegro {
+    color: black;
+}
+.facebookColor {
+    color: white;
+    background: #46639f;
+    border-radius: 50px;
+}
+/*WhatsApp*/
+
+.whatsappColor {
+    color: white;
+    background: green;
+    border-radius: 50px;
+}
+.whatsappBlanco {
+    color: white;
+}
+.whatsappNegro {
+    color: black;
+}
+/*YOUTUBE*/
+
+.youtubeColor {
+    color: white;
+    background: #d6513e;
+    border-radius: 50px;
+}
+.youtubeBlanco {
+    color: white;
+}
+.youtubeNegro {
+    color: black;
+}
+/*INSTAGRAM*/
+
+.instagramColor {
+    color: white;
+    background: linear-gradient(45deg, #fca925, #ee1d5f, #6350a2);
+    border-radius: 50px;
+}
+.instagramBlanco {
+    color: white;
+}
+.instagramNegro {
+    color: black;
+}
+/*===============
+ ERROR 404
+================*/
+
+#msg {
+    font-family: cursive;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+}
+#error {
+    display: table;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#f1, #f2 {
+    font-family: cursive;
+    font-size: 100px;
+    color: #000000;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .7);
+    display: table-cell;
+}
+#circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #FFF1E0, #F4C661);
+    box-shadow: 0 0 15px rgba(255, 211, 150, 1);
+    position: relative;
+    top: 10px;
+    animation: move 4s linear infinite;
+}
+@-webkit-keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#smalldot {
+    height: 5px;
+    width: 5px;
+    background-color: #111742;
+    border-radius: 50%;
+    position: relative;
+    top: 75%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+#info {
+    font-family: cursive;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+}
+#btn {
+    height: 30px;
+    width: 120px;
+    color: #000000;
+    background-color: #E94674;
+    font-family: monospace;
+    font-size: 13px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(233, 68, 114, .8);
+}
+#btn:hover {
+    cursor: pointer;
+}
+.dusk {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    position: absolute;
+}
+.logo-404 {
+    margin-top: 60px;
+    width: 139;
+    height: 39;
+}
+.logo-404 a img {
+    width: 139px;
+    height: 39px;
+}
+.content-404 {
+    margin-bottom: 60px;
+}
+.content-404 h1 {
+    color: #363432;
+    font-family: 'Roboto', sans-serif;
+    font-size: 41px;
+    font-weight: 300;
+}
+.content-404 img {
+    margin: 0 auto;
+}
+.content-404 p {
+    color: #363432;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.content-404 h2 {
+    margin-top: 50px;
+}
+.content-404 h2 a {
+    background: #FE980F;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
+    font-weight: 300;
+    padding: 8px 40px;
+}
+/*=============================================
+ERROR 404, VERIFICAR
+=============================================*/
+
+.error404. .verificar {
+    color: #333;
+}
+/*=============================================
+ ESCRITORIO GRANDE(LG REVISAMOS EN 1366px EN ADELANTE) 
+=============================================*/
+
+@media(min-width: 1200px) {
+    .col-lg-0 {
+        display: none;
+    }
+    #msg {
+        font-family: cursive;
+        font-size: 35px;
+        color: #2B2B2B;
+        text-align: center;
+        text-shadow: 0 0 50px rgba(255, 255, 255, .8);
+    }
+    #f1, #f2 {
+        font-size: 150px;
+    }
+    #circle {
+        height: 135px;
+        width: 135px;
+    }
+    .error404 h1 {
+        font-size: 300px;
+        text-shadow: 8px 8px 1px #dadada;
+    }
+    .verificar h3 {
+        margin-top: 30px;
+        font-size: 100px;
+        text-shadow: 4px 4px 1px #dadada;
+    }
+}
+/*==========================================#2B2B2B===
+ ESCRITORIO MEDIANO O TABLET HORIZONTAL(MD REVISAMOS EN 1024px)
+=============================================*/
+
+@media(max-width: 1199px)and (min-width: 992px) {
+    .col-md-0 {
+        display: none;
+    }
+    .error404 h1 {
+        font-size: 200px;
+        text-shadow: 6px 6px 1px #dadada;
+    }
+    .verificar h3 {
+        margin-top: 30px;
+        font-size: 100px;
+        text-shadow: 4px 4px 1px #dadada;
+    }
+}
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VETICAL(SM REVISAMOS EN 768PX)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px) {
+    .col-sm-0 {
+        display: none;
+    }
+    .error404 h1 {
+        font-size: 150px;
+        text-shadow: 4px 4px 1px #dadada;
+    }
+    .verificar h3 {
+        margin-top: 30px;
+        font-size: 100px;
+        text-shadow: 4px 4px 1px #dadada;
+    }
+}
+/*=============================================
+MOVIL(XS REVISAMOS EN 320PX)
+=============================================*/
+
+@media(max-width: 767px) {
+    .col-xs-0 {
+        display: none;
+    }
+    #f1, #f2 {
+        font-size: 100px;
+    }
+    #circle {
+        height: 100px;
+        width: 100px;
+    }
+    .error404 h1 {
+        font-size: 75px;
+        text-shadow: 2px 2px 1px #dadada;
+    }
+    .verificar h3 {
+        margin-top: 30px;
+        font-size: 50px;
+        text-shadow: 2px 2px 1px #dadada;
+    }
+}

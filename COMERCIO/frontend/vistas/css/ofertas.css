@@ -1,0 +1,49 @@
+/*=============================================
+OFERTAS
+=============================================*/
+
+.ofertas {
+    position: relative;
+    background: linear-gradient(#4DA0AF, #222, silver, white);
+    padding: 0;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.ofertas h3 {
+    padding-top: 20px;
+    color: white;
+}
+.ofertas figure {
+    position: relative;
+}
+.ofertas h1 {
+    color: white;
+    margin-top: -30px;
+    font-size: 60px;
+    text-shadow: 0px 0px 10px black;
+}
+.ofertas .countdown {
+    margin-bottom: 5px;
+}
+/*caracteristicas*/
+
+/*----------------------------------------*/
+
+/*----------website-features-------------*/
+
+.website-features {
+    margin: 60px 0;
+}
+.website-features img {
+    width: 20%;
+}
+.feature-text {
+    margin-top: 10px;
+    float: right;
+    width: 80%;
+    padding-left: 20px;
+}
+.feature-box {
+    padding-top: 20px;
+}

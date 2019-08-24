@@ -1,0 +1,163 @@
+/*=============================================
+SUSCRIPTORES 
+=============================================*/
+
+#suscriptores {
+    padding: 20px;
+}
+/*=====  Fin de SUSCRIPTORES ======*/
+
+/*=============================================
+MENSAJES        
+=============================================*/
+
+/*=====  Fin de MENSAJES ======*/
+
+/*=====  Fin de PERFIL ======*/
+
+/*=============================================
+ESCRITORIO GRANDE                    
+=============================================*/
+
+@media (min-width:1200px) {
+    #cabezote ul li {
+        list-style: none;
+        float: left;
+        margin: 5px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 100%;
+        position: relative;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+    }
+    #cabezote ul li span {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 10px;
+        background: red;
+        border-radius: 100%;
+        color: white;
+    }
+}
+/*=====  Fin de ESCRITORIO GRANDE  ======*/
+
+/*=============================================
+ESCRITORIO MEDIANO                   
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px) {
+    /*fecha y hora*/
+    /*Cabezote*/
+    #cabezote ul li {
+        list-style: none;
+        float: left;
+        margin: 5px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 100%;
+        position: relative;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+    }
+    #cabezote ul li span {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 10px;
+        background: red;
+        border-radius: 100%;
+        color: white;
+    }
+}
+/*=====  Fin de ESCRITORIO PEQUEÑO  ======*/
+
+/*********************************************
+Tablets
+**********************************************/
+
+@media (max-width:991px) and (min-width:768px) {
+    /*Cabezote*/
+    #cabezote ul li {
+        list-style: none;
+        float: left;
+        margin: 5px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 100%;
+        position: relative;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+    }
+    #cabezote ul li span {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 10px;
+        background: red;
+        border-radius: 100%;
+        color: white;
+    }
+}
+/*=====  Fin de TABLET  ======*/
+
+/*********************************************
+Phones
+**********************************************/
+
+@media (max-width:767px) {
+    /*Cabezote*/
+    #cabezote ul li {
+        list-style: none;
+        float: left;
+        margin: 1px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 100%;
+        position: relative;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+    }
+    #cabezote ul li span {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        line-height: 15px;
+        font-size: 8px;
+        background: red;
+        border-radius: 100%;
+        color: white;
+    }
+}
